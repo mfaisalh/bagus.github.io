@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #login-container {
+    background: white;
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+ }
+ #login-container h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+ }
+
+ #login-container h2::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    top: 10px;
+    left: -1px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+ #login-container h2::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    top: 10px;
+    right: -1px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    transform: rotate(90deg);
+    transform-origin: right;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+
+ input {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+ }
+
+input[type=text] {
+    border-bottom: 2px solid #000000;
+}
+
+input[type=password] {
+    border-bottom: 2px solid #000000;
+}
+
+ input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #8e2de2;
+ }
+
+ input[type=password]:focus {
+    outline: none;
+    border-bottom: 2px solid #8e2de2;
+ }
+
+ p {
+    text-align: center;
+ }
+
+ #btn-soc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ button {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px ;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+ }
